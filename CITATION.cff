@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below and credit the original source."
+title: "HS Code Concordance - US, EU, Canada, Australia"
+type: dataset
+authors:
+  - family-names: "Bousquet"
+    given-names: "Henri"
+abstract: "HS code concordance: one record per 6-digit HS code, with US, EU, Canada and Australia national tariff codes, descriptions and duty rates. Pay per record."
+url: "https://apify.com/phonic_lily/customs-hs-code-concordance"
+repository-code: "https://github.com/adminglobalcostdata/customs-hs-code-concordance"
+date-released: 2026-11-12
+keywords:
+  - open-data
+  - dataset
+  - json
+  - jsonl
+  - apify
+  - apify-actor
+  - data-api
+  - customs

@@ -1,0 +1,54 @@
+{
+ "columns": [
+  {
+   "name": "hs6",
+   "type": "string",
+   "description": "6-digit Harmonized System code."
+  },
+  {
+   "name": "hs2",
+   "type": "string",
+   "description": "HS chapter (first 2 digits)."
+  },
+  {
+   "name": "hs4",
+   "type": "string",
+   "description": "HS heading (first 4 digits)."
+  },
+  {
+   "name": "jurisdictions",
+   "type": "array",
+   "description": "Jurisdictions with at least one national tariff line under this HS6: us, eu, ca, au."
+  },
+  {
+   "name": "jurisdictions_count",
+   "type": "integer",
+   "description": "Number of jurisdictions present (1 to 4); the UK is not counted."
+  },
+  {
+   "name": "us_codes",
+   "type": "array",
+   "description": "US HTS lines: code, description, general_rate. Null when absent."
+  },
+  {
+   "name": "eu_codes",
+   "type": "array",
+   "description": "EU TARIC 10-digit codes: code, description (always null, not in the source), general_rate (third-country duty as published, with dates when several periods). Null when absent."
+  },
+  {
+   "name": "ca_codes",
+   "type": "array",
+   "description": "Canada Customs Tariff items: code, statistical_suffix, description, general_rate (MFN). Null when absent."
+  },
+  {
+   "name": "au_codes",
+   "type": "array",
+   "description": "Australia Working Tariff codes: code, statistical_code, description, general_rate. Null when absent."
+  },
+  {
+   "name": "uk_quota_codes",
+   "type": "array",
+   "description": "Informational, not counted: UK commodity codes covered by a tariff quota under this HS6 (code, quota_order_numbers). Null when none."
+  }
+ ]
+}
